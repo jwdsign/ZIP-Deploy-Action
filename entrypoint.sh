@@ -6,7 +6,7 @@ M_TMP_DIR=${TMP_DIR:-"~/"}
 
 echo "Creating a zip files..."
 cd $M_LOCAL_DIR
-zip ~/dist.zip -r ./ -x \*/.git/\* $EXCLUDE
+zip ~/brainbox-theme-latest.zip -r ./ -x \*/.git/\* $EXCLUDE
 cd ~/
 echo "Zip file created."
 
@@ -17,14 +17,7 @@ sshpass -p $DEPLOY_PASSWORD scp -o StrictHostKeyChecking=no dist.zip ${DEPLOY_US
 
 sshpass -p $DEPLOY_PASSWORD ssh ${DEPLOY_USERNAME}@${TARGET_SERVER} bash -c "'
 cd ${M_TMP_DIR}
-rm -rf tmp_zip
-mkdir tmp_zip
-unzip dist.zip -d tmp_zip
-cp -Rpf tmp_zip/. ${M_REMOTE_DIR}
-rm -rf tmp_zip
-rm dist.zip
 cd ${M_REMOTE_DIR}
 ${EXTRA_COMMANDS}
 '"
-
 echo "Deploy completed"
