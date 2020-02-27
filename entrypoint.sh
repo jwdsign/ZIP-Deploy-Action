@@ -15,14 +15,10 @@ echo "Deploying files"
 sshpass -p $DEPLOY_PASSWORD scp -o StrictHostKeyChecking=no dist.zip ${DEPLOY_USERNAME}@${TARGET_SERVER}:${M_TMP_DIR}
 
 sshpass -p $DEPLOY_PASSWORD ssh ${DEPLOY_USERNAME}@${TARGET_SERVER} bash -c "'
-cd ${M_TMP_DIR}
-rm -rf tmp_zip
-mkdir tmp_zip
-unzip brainbox-theme-latest.zip -d tmp_zip
-cp -Rpf tmp_zip/. ${M_REMOTE_DIR}
-rm -rf tmp_zip
-rm dist.zip
+
 cd ${M_REMOTE_DIR}
+cp brainbox-theme-latest.zip
+
 ${EXTRA_COMMANDS}
 '"
 
