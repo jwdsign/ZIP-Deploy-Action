@@ -2,7 +2,6 @@
 
 M_LOCAL_DIR=${LOCAL_DIR:-"./"}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
-M_TMP_DIR=${TMP_DIR:-"~/"}
 
 echo "Creating a zip files..."
 cd $M_LOCAL_DIR
@@ -16,9 +15,6 @@ sshpass -p $DEPLOY_PASSWORD scp -o StrictHostKeyChecking=no brainbox-theme-lates
 
 sshpass -p $DEPLOY_PASSWORD ssh ${DEPLOY_USERNAME}@${TARGET_SERVER} bash -c "'
 
-cd /_downloads/themes/brainbox-v3
-
 ${EXTRA_COMMANDS}
 '"
-
 echo "Deploy completed"
