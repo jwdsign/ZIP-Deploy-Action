@@ -16,7 +16,7 @@ sshpass -p $DEPLOY_PASSWORD scp -o StrictHostKeyChecking=no brainbox-theme-lates
 
 sshpass -p $DEPLOY_PASSWORD ssh ${DEPLOY_USERNAME}@${TARGET_SERVER} bash -c "'
 
-cd ${M_REMOTE_DIR}
+cd ${M_REMOTE_DIR}_downloads/themes/brainbox-v3
 cp ${LOCAL_DIR:-"./"}brainbox-theme-latest.zip ${REMOTE_DIR:-"~/"}
 
 ${EXTRA_COMMANDS}
