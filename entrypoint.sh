@@ -5,7 +5,7 @@ M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
 
 echo "Creating a zip files..."
 cd $M_LOCAL_DIR
-zip ~/brainbox-theme-latest.zip -r ./ -x \*/.git/\* \*/.json/\* \*/.config.js/\* \*/src/**\* $EXCLUDE
+zip ~/brainbox-theme-latest.zip -r ./ -x \*/.git/\* bower.json/\* package.json/\* webpack.config.js/\* .github/**\* src/**\* $EXCLUDE
 cd ~/
 echo "Zip file created."
 
