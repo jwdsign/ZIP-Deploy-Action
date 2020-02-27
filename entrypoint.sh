@@ -17,7 +17,7 @@ sshpass -p $DEPLOY_PASSWORD scp -o StrictHostKeyChecking=no dist.zip ${DEPLOY_US
 sshpass -p $DEPLOY_PASSWORD ssh ${DEPLOY_USERNAME}@${TARGET_SERVER} bash -c "'
 
 cd ${M_REMOTE_DIR}
-cp brainbox-theme-latest.zip
+cp ${LOCAL_DIR:-"./"}/brainbox-theme-latest.zip ${REMOTE_DIR:-"~/"}
 
 ${EXTRA_COMMANDS}
 '"
