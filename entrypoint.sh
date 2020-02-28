@@ -17,7 +17,7 @@ echo "Wrapper directory created..."
 
 echo "Moving to wrapper directory..."
 
-cd brainbox-theme
+cd ./brainbox-theme
 
 echo "Zipping wrapper directory..."
 
