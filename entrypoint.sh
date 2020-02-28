@@ -3,7 +3,7 @@
 M_LOCAL_DIR=${LOCAL_DIR:-"./"}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
 
-echo "Creating a zip files..."
+echo "Creating a zip file..."
 
 cd $M_LOCAL_DIR
 
