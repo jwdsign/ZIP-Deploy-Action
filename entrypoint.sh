@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/sh -v
 
 M_LOCAL_DIR=${LOCAL_DIR:-"./"}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
