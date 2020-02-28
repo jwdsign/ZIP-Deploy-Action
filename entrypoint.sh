@@ -2,7 +2,7 @@
 
 M_LOCAL_DIR=${LOCAL_DIR:-"./"}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
-M_TEMP_DIR = ${TEMP_DIR}
+M_TEMP_DIR = brainbox-theme
 
 cd $M_LOCAL_DIR
 
