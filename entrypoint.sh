@@ -11,6 +11,7 @@ mkdir -p "brainbox-theme"
 
 echo "Moving all files to wrapper directory..."
 
+rm -r src
 mv * brainbox-theme/
 mv brainbox-theme brainbox-theme
 
