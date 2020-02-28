@@ -5,7 +5,9 @@ M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
 
 echo "Creating a zip files..."
 cd $M_LOCAL_DIR
-zip ~/brainbox-theme-latest.zip -r ../ -x "src/*" -x ".git/*" -x ".github/*" -x ".gitattributes" -x ".gitignore" -x "bower.json" -x "package.json" -x "webpack.config.js"
+mkdir brainbox
+zip brainbox-theme-latest.zip /brainbox
+zip ~/brainbox-theme-latest.zip -u ./ -x "src/*" -x ".git/*" -x ".github/*" -x ".gitattributes" -x ".gitignore" -x "bower.json" -x "package.json" -x "webpack.config.js"
 cd ~/
 echo "Zip file created."
 
