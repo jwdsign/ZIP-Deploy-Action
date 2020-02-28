@@ -7,7 +7,7 @@ cd $M_LOCAL_DIR
 
 echo "Creating wrapper directory..."
 
-mkdir -v "brainbox-theme"
+mkdir -p "brainbox-theme"
 
 echo "Moving all files to wrapper directory..."
 
