@@ -12,7 +12,7 @@ echo "Moving to wrapper directory..."
 mv * .brainbox-theme/
 mv .brainbox-theme brainbox-theme
 
-cd ./brainbox-theme
+cd brainbox-theme
 
 echo "Zipping wrapper directory..."
 
