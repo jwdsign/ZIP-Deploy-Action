@@ -2,19 +2,18 @@
 
 M_LOCAL_DIR=${LOCAL_DIR:-"./"}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
-M_TEMP_DIR = brainbox-theme
 
 cd $M_LOCAL_DIR
 
 echo "Creating wrapper directory..."
 
-mkdir -v "$M_TEMP_DIR"
+mkdir -v "brainbox-theme"
 
 echo "Moving all files to wrapper directory..."
 
-mv * $M_TEMP_DIR/
+mv * brainbox-theme/
 
-cd $M_TEMP_DIR
+cd "brainbox-theme"
 
 echo "Zipping wrapper directory..."
 
