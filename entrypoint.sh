@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-M_LOCAL_DIR=${LOCAL_DIR:-"./"}
+M_LOCAL_DIR=${LOCAL_DIR:-"."}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
 
 echo "Creating a zip files..."
