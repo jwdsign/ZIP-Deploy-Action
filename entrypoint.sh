@@ -8,7 +8,7 @@ echo "Creating a zip file..."
 
 cd $M_LOCAL_DIR
 
-mkdir $M_TEMP_DIR
+mkdir "$M_TEMP_DIR"
 
 echo "Moving all files to wrapper directory..."
 
