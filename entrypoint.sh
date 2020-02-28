@@ -2,18 +2,17 @@
 
 M_LOCAL_DIR=${LOCAL_DIR:-"./"}
 M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
-M_TEMP_DIR = ${TEMP_DIR}
+M_TEMP_DIR = ${TEMP_DIR:-"./"}
 
 echo "Creating a zip file..."
 
 cd $M_LOCAL_DIR
 
-mkdir "$M_TEMP_DIR"
+mkdir -v $M_TEMP_DIR
 
 echo "Moving all files to wrapper directory..."
 
 mv * .$M_TEMP_DIR/
-mv .$M_TEMP_DIR $M_TEMP_DIR
 
 cd $M_TEMP_DIR
 
