@@ -7,15 +7,10 @@ echo "Creating a zip file..."
 
 cd $M_LOCAL_DIR
 
-echo "Creating wrapper directory..."
+echo "Moving to wrapper directory..."
 
-mkdir .brainbox-theme
 mv * .brainbox-theme/
 mv .brainbox-theme brainbox-theme
-
-echo "Wrapper directory created..."
-
-echo "Moving to wrapper directory..."
 
 cd ./brainbox-theme
 
