@@ -13,12 +13,13 @@ echo "Moving all files to wrapper directory..."
 
 mv * brainbox-theme/
 
-cd "brainbox-theme"
+cd brainbox-theme
 
 echo "Zipping wrapper directory..."
 
 zip ~/brainbox-theme-latest.zip -r ./ -x "src/*" -x ".git/*" -x ".github/*" -x ".gitattributes" -x ".gitignore" -x "bower.json" -x "package.json" -x "webpack.config.js"
 cd ~/
+
 echo "Zip file created."
 
 echo "Deploying files"
