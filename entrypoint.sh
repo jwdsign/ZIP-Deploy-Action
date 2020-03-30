@@ -5,8 +5,6 @@ M_REMOTE_DIR=${REMOTE_DIR:-"~/"}
 
 cd $M_LOCAL_DIR
 
-echo $M_REMOTE_DIR
-
 echo "Creating wrapper directory..."
 
 mkdir -p "brainbox-theme"
